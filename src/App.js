@@ -1,4 +1,5 @@
-
+import React from 'react';
+import { Route, Switch, Redirect } from 'react-router-dom';
 import './App.css';
 
 function App() {
@@ -33,8 +34,14 @@ function App() {
           </div>
 
           <div className="col-md-10">
-            <ul className="phones">
-              <li className="thumbnail">
+            <Switch>
+              <Route path="/" exact component={PhoneCatalog} />
+              <Route path="/phone" component={Phone} />
+              <Redirect path="/home" to="/" />
+
+              <p>Not found page</p>
+            </Switch>
+              {/* <li className="thumbnail">
                 <a href="#!/phones/motorola-xoom-with-wi-fi" className="thumb">
                   <img alt="Motorola XOOM™ with Wi-Fi" src="img/phones/motorola-xoom-with-wi-fi.0.jpg" />
                 </a>
@@ -247,8 +254,7 @@ function App() {
                 </a>
                 <a href="#!/phones/motorola-charm-with-motoblur">Motorola CHARM™ with MOTOBLUR™</a>
                 <p>Motorola CHARM fits easily in your pocket or palm. Includes MOTOBLUR service.</p>
-              </li>
-            </ul>
+              </li> */}
           </div>
         </div>
       </div>
