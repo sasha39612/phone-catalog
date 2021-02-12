@@ -1,6 +1,4 @@
-const BASE_URL = '/api/phones'
-
-
+const BASE_URL = 'https://mate-academy.github.io/phone-catalogue-static/api/phones'
 
 const request = (url) => {
   return fetch(`${BASE_URL}${url}`)

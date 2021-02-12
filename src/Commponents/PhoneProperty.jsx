@@ -3,8 +3,10 @@ import { Link } from 'react-router-dom';
 import { getPhonesFromApiByID } from './ApiPhone';
 
 
-export const PhoneProperty = ({ phoneId }) => {
+export const PhoneProperty = ({ phoneId, match }) => {
   const [ phone, setPhone ] = useState({});
+
+  // console.log(match.params.id)
 
   useEffect(() => {
     getPhonesFromApiByID("motorola-xoom-with-wi-fi")
