@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,7 +35,7 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
 
 /* app css stylesheet */
 body {
@@ -142,4 +142,9 @@ ul.specs dt {
 
 h1 {
   border-bottom: 1px solid gray;
+}
+
+.button__back {
+  color: #61dafb;
+  z-index: 2;
 }
