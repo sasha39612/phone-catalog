@@ -40,9 +40,9 @@ function App() {
           <div className="col-md-10">
             <BrowserRouter>
               <Switch>
-                <Route path="/phonecatalog" exact component={PhoneCatalog} />
-                <Route path="/phonecatalog/phone" component={Phone} />
-                <Route path="/phonecatalog/phoneproperty/:phoneId" component={PhoneProperty} />
+                <Route path="/phone-catalog" exact component={PhoneCatalog} />
+                <Route path="/phone-catalog/phone" component={Phone} />
+                <Route path="/phone-catalog/phoneproperty/:phoneId" component={PhoneProperty} />
 
                 <p>Not found page</p>
               </Switch>

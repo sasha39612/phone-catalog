@@ -29,7 +29,7 @@ export const PhoneProperty = ({ match }) => {
       <p>{phone.description}</p>
       <p className="phones__btn-buy-wrapper">
         <Link 
-          to="/phonecatalog"
+          to="/phone-catalog"
           className="btn btn-success"
         >
           Back
