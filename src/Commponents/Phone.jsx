@@ -13,7 +13,7 @@ export const Phone = ({ phone, onChosePhone }) => {
       </p>
 
       <Link
-        to="/phoneProperty"
+        to={`/phonecatalog/phoneProperty/${phone.id}`}
         className="thumb"
         value={phone.id}
         onClick={() => {onChosePhone(phone.id)}}
@@ -22,7 +22,7 @@ export const Phone = ({ phone, onChosePhone }) => {
       </Link>
 
       <Link
-        to="/phoneProperty"
+        to={`/phonecatalog/phoneProperty/${phone.id}`}
         value={phone.id}
         onClick={() => {onChosePhone(phone.id)}}
       >
