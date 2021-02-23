@@ -4,13 +4,12 @@ import { getPhonesFromApiByID } from './ApiPhone';
 
 export const PhoneProperty = ({ match }) => {
   const [ phone, setPhone ] = useState({});
+  const [ images, setImages ] = useState([]);
 
   useEffect(() => {
     getPhonesFromApiByID(match.params.phoneId)
       .then(setPhone)
   }, []);
-
-
 
   return (
     <div className="thumbnail">
@@ -21,7 +20,7 @@ export const PhoneProperty = ({ match }) => {
           phone.images.map(image => (
             <li key={Math.random()}>
               {console.log(image)}
-            <img src={image} alt={phone.id}/>
+            <img src={`./img/phones/${image}`} alt={phone.id}/>
           </li>
           )))}
       </ul>
