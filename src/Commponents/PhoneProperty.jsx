@@ -19,8 +19,8 @@ export const PhoneProperty = ({ match }) => {
         {(phone.hasOwnProperty('name')) && (
           phone.images.map(image => (
             <li key={Math.random()}>
-              {console.log(image)}
-            <img src={`/${image}`} alt={phone.id}/>
+              {console.log(`../${image}`)}
+            <img src={`../${image}`} alt={phone.id}/>
           </li>
           )))}
       </ul>
