@@ -20,7 +20,7 @@ export const PhoneProperty = ({ match }) => {
           phone.images.map(image => (
             <li key={Math.random()}>
               {console.log(image)}
-            <img src={`./img/phones/${image}`} alt={phone.id}/>
+            <img src={`/${image}`} alt={phone.id}/>
           </li>
           )))}
       </ul>
